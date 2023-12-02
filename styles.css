@@ -1,0 +1,123 @@
+/* Reset default styles for better consistency */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #D9CAC0; /* Replace with your preferred color */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.menu {
+  background-image: linear-gradient(to right, #FFD700, #FFA500); /* Replace color codes with your preferred gradient colors */
+  padding: 10px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+section {
+  padding-top: 45px;
+}
+#home, #menu, #gallery, #reservation {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#about .cafe-image {
+  max-width: 100%;
+}
+.cafe-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu-category ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-category ul li img {
+  max-width: 100px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.menu-category ul li span {
+  font-weight: bold;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 10px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+}
+
+.caption {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.gallery-item:hover .caption {
+  display: block;
+}
