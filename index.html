@@ -1,148 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Cafe Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/top.jpg" type="image/x-icon" />
-  </head>
-  <body>
-    <!-- Navigation Menu -->
-    <nav class="menu">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cafe Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/top.jpg" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Navigation Menu -->
+  <nav class="menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reservation">Reservation</a></li>
+    </ul>
+  </nav>
+  <!-- Sections -->
+  <section id="about">
+    <img src="images/wide.png" alt="Cafe Image" class="cafe-image" />
+    <h2>About</h2>
+    <p>
+      Welcome to CAFE WEB, a cozy place for web developers to indulge in
+      delicious food and beverages while diving into coding adventures.
+      Whether you're seeking a quiet spot to brainstorm your next project or
+      craving a refreshing break during intense coding sessions, our cafe
+      offers a relaxing ambiance for coding enthusiasts.
+    </p>
+  </section>
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="menu-category">
+      <h3>Code Fuel</h3>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#reservation">Reservation</a></li>
+        <li>
+          <img src="images/menu/1_1.jpeg" alt="HTML Hot Espresso" />
+          HTML Hot Espresso - $3.50
+        </li>
+        <li>
+          <img src="images/menu/1_2.jpeg" alt="HTML Hot Espresso" />
+          CSS Cappuccino - $4.00
+        </li>
+        <li>
+          <img src="images/menu/1_3.jpeg" alt="HTML Hot Espresso" />
+          Python Mocha Latte - $4.50
+        </li>
       </ul>
-    </nav>
-    <!-- Sections -->
-    <section id="about">
-      <img src="images/wide.png" alt="Cafe Image" class="cafe-image" />
-      <h2>About</h2>
-      <p>
-        Welcome to CAFE WEB, a cozy place for web developers to indulge in
-        delicious food and beverages while diving into coding adventures.
-        Whether you're seeking a quiet spot to brainstorm your next project or
-        craving a refreshing break during intense coding sessions, our cafe
-        offers a relaxing ambiance for coding enthusiasts.
-      </p>
-    </section>
-    <section id="menu">
-      <h2>Menu</h2>
-      <div class="menu-category">
-        <h3>Code Fuel</h3>
-        <ul>
-          <li>
-            <img src="images/menu/1_1.jpeg" alt="HTML Hot Espresso" />
-            HTML Hot Espresso - $3.50
-          </li>
-          <li>
-            <img src="images/menu/1_2.jpeg" alt="HTML Hot Espresso" />
-            CSS Cappuccino - $4.00
-          </li>
-          <li>
-            <img src="images/menu/1_3.jpeg" alt="HTML Hot Espresso" />
-            Python Mocha Latte - $4.50
-          </li>
-        </ul>
+    </div>
+    <div class="menu-category">
+      <h3>Refreshment Frameworks</h3>
+      <ul>
+        <li>
+          <img src="images/menu/2_1.jpeg" alt="HTML Hot Espresso" />
+          React Iced Tea - $3.80
+        </li>
+        <li>
+          <img src="images/menu/2_2.jpeg" alt="HTML Hot Espresso" />
+          Angular Chilled Smoothie - $4.20
+        </li>
+      </ul>
+    </div>
+    <div class="menu-category">
+      <h3>Breakfast Bytes</h3>
+      <ul>
+        <li>
+          <img src="images/menu/3_1.jpeg" alt="HTML Hot Espresso" />
+          Bootstrap Breakfast Bagel - $5.00
+        </li>
+        <li>
+          <img src="images/menu/3_2.jpeg" alt="HTML Hot Espresso" />
+          Ruby on Rails Omelette - $5.20
+        </li>
+      </ul>
+    </div>
+    <div class="menu-category">
+      <h3>Decadent Debugging</h3>
+      <ul>
+        <li>
+          <img src="images/menu/4_1.jpeg" alt="HTML Hot Espresso" />
+          API Apple Pie - $4.50
+        </li>
+        <li>
+          <img src="images/menu/4_2.jpeg" alt="HTML Hot Espresso" />
+          Error 404 Chocolate Cake - $5.00
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="image-gallery">
+      <div class="gallery-item">
+        <img src="images/environment/1.jpeg" alt="Cafe Image 1" />
+        <div class="caption">Cozy Seating Area</div>
       </div>
-      <div class="menu-category">
-        <h3>Refreshment Frameworks</h3>
-        <ul>
-          <li>
-            <img src="images/menu/2_1.jpeg" alt="HTML Hot Espresso" />
-            React Iced Tea - $3.80
-          </li>
-          <li>
-            <img src="images/menu/2_2.jpeg" alt="HTML Hot Espresso" />
-            Angular Chilled Smoothie - $4.20
-          </li>
-        </ul>
+      <div class="gallery-item">
+        <img src="images/environment/2.jpeg" alt="Cafe Image 1" />
+        <div class="caption">Artisanal Coffee Bar</div>
       </div>
-      <div class="menu-category">
-        <h3>Breakfast Bytes</h3>
-        <ul>
-          <li>
-            <img src="images/menu/3_1.jpeg" alt="HTML Hot Espresso" />
-            Bootstrap Breakfast Bagel - $5.00
-          </li>
-          <li>
-            <img src="images/menu/3_2.jpeg" alt="HTML Hot Espresso" />
-            Ruby on Rails Omelette - $5.20
-          </li>
-        </ul>
+      <div class="gallery-item">
+        <img src="images/environment/3.jpeg" alt="Cafe Image 1" />
+        <div class="caption">Café's Aesthetic Décor</div>
       </div>
-      <div class="menu-category">
-        <h3>Decadent Debugging</h3>
-        <ul>
-          <li>
-            <img src="images/menu/4_1.jpeg" alt="HTML Hot Espresso" />
-            API Apple Pie - $4.50
-          </li>
-          <li>
-            <img src="images/menu/4_2.jpeg" alt="HTML Hot Espresso" />
-            Error 404 Chocolate Cake - $5.00
-          </li>
-        </ul>
+      <div class="gallery-item">
+        <img src="images/environment/4.jpeg" alt="Cafe Image 1" />
+        <div class="caption">Community Gathering Spot</div>
       </div>
-    </section>
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="image-gallery">
-        <div class="gallery-item">
-          <img src="images/environment/1.jpeg" alt="Cafe Image 1" />
-          <div class="caption">Cozy Seating Area</div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/environment/2.jpeg" alt="Cafe Image 1" />
-          <div class="caption">Artisanal Coffee Bar</div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/environment/3.jpeg" alt="Cafe Image 1" />
-          <div class="caption">Café's Aesthetic Décor</div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/environment/4.jpeg" alt="Cafe Image 1" />
-          <div class="caption">Community Gathering Spot</div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/environment/5.jpeg" alt="Cafe Image 1" />
-          <div class="caption">The Web Wall</div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/environment/6.jpeg" alt="Cafe Image 1" />
-          <div class="caption">Live Music Corner</div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/environment/7.jpeg" alt="Cafe Image 1" />
-          <div class="caption">Artisanal Coffee Bar</div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/environment/8.jpeg" alt="Cafe Image 1" />
-          <div class="caption">Community Gathering Spot</div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/environment/5.jpeg" alt="Cafe Image 1" />
+        <div class="caption">The Web Wall</div>
       </div>
-    </section>
-    <section id="reservation">
-      <h2>Reservation</h2>
-    </section>
+      <div class="gallery-item">
+        <img src="images/environment/6.jpeg" alt="Cafe Image 1" />
+        <div class="caption">Live Music Corner</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/environment/7.jpeg" alt="Cafe Image 1" />
+        <div class="caption">Artisanal Coffee Bar</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/environment/8.jpeg" alt="Cafe Image 1" />
+        <div class="caption">Community Gathering Spot</div>
+      </div>
+    </div>
+  </section>
+  <section id="reservation">
+    <h2>Reservation Section</h2>
 
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
+    <!-- Reservation Form -->
+    <form id="reservation-form">
+      <label for="customer-name">Customer Name:</label>
+      <input type="text" id="customer-name" name="customer-name" required><br><br>
 
-      var navbar = document.querySelector(".menu");
-      var sticky = navbar.offsetTop;
+      <label for="number-of-people">Number of People:</label>
+      <input type="number" id="number-of-people" name="number-of-people" required><br><br>
 
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-    </script>
-  </body>
+      <label for="reservation-time">Reservation Time:</label>
+      <input type="datetime-local" id="reservation-time" name="reservation-time" required><br><br>
+
+      <label for="product-selection">Product Selection:</label>
+      <select id="product-selection" name="product-selection" multiple>
+        <option value="HTML Hot Espresso">HTML Hot Espresso</option>
+        <option value="CSS Cappuccino">CSS Cappuccino</option>
+        <option value="Python Mocha Latte">Python Mocha Latte</option>
+        <option value="React Iced Tea">React Iced Tea</option>
+        <option value="Angular Chilled Smoothie">Angular Chilled Smoothie</option>
+        <option value="Bootstrap Breakfast Bagel">Bootstrap Breakfast Bagel</option>
+        <option value="Ruby on Rails Omelette">Ruby on Rails Omelette</option>
+        <option value="API Apple Pie">API Apple Pie</option>
+        <option value="Error 404 Chocolate Cake">Error 404 Chocolate Cake</option>
+        <!-- Add other product options as needed -->
+      </select><br><br>
+
+      <button type="button">Order</button>
+    </form>
+
+    <!-- Order List -->
+    <div id="order-list" style="display: none;">
+      <h3>Order List</h3>
+      <ul id="items-list">
+        <!-- Selected items will be displayed here -->
+      </ul>
+    </div>
+  </section>
+
+</body>
+
 </html>
