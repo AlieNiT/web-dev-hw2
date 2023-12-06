@@ -1,11 +1,18 @@
 /* Reset default styles for better consistency */
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #D9CAC0; /* Replace with your preferred color */
+  background-color: #D9CAC0;
+  /* Replace with your preferred color */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19,8 +26,10 @@ body {
   top: 0;
   z-index: 1;
 }
+
 .menu {
-  background-image: linear-gradient(to right, #FFD700, #FFA500); /* Replace color codes with your preferred gradient colors */
+  background-image: linear-gradient(to right, #FFD700, #FFA500);
+  /* Replace color codes with your preferred gradient colors */
   padding: 10px;
 }
 
@@ -37,10 +46,15 @@ body {
   text-decoration: none;
   color: #333;
 }
+
 section {
   padding-top: 45px;
 }
-#home, #menu, #gallery, #reservation {
+
+#home,
+#menu,
+#gallery,
+#reservation {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -55,12 +69,14 @@ section {
 #about .cafe-image {
   max-width: 100%;
 }
+
 .cafe-image {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
+
 .menu-category {
   margin-bottom: 30px;
 }
@@ -120,4 +136,84 @@ section {
 
 .gallery-item:hover .caption {
   display: block;
+}
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+
+
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+@media (min-width: 480px) {
+
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+@media (min-width: 480px) {
+
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+.button {
+  background-color: #6E4D33;
+  border: none;
+  color: white;
+  padding: 15px 39px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #6E4D33;
+  color: #6E4D33;
 }

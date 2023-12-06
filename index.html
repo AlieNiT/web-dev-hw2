@@ -130,40 +130,60 @@
     <h2>Reservation</h2>
 
     <!-- Reservation Form -->
+
     <form id="reservation-form">
-      <label for="customer-name">Customer Name:</label>
+      <table class="rwd-table">
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td data-th="title">HTML Hot Espresso</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">CSS Cappuccino</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">Python Mocha Latte</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">React Iced Tea</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">Angular Chilled Smoothie</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">Bootstrap Breakfast Bagel</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">Ruby on Rails Omelette</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">API Apple Pie</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+        <tr>
+          <td data-th="title">Error 404 Chocolate Cake</td>
+          <td data-th="quantity"><input type="number" value="0" placeholder="Enter Quantity" /></td>
+        </tr>
+      </table>
+      <label for="customer-name">Your Name:</label>
       <input type="text" id="customer-name" name="customer-name" required><br><br>
 
-      <label for="number-of-people">Number of People:</label>
-      <input type="number" id="number-of-people" name="number-of-people" required><br><br>
+      <label for="delivery-time">Time of Delivery:</label>
+      <input type="datetime-local" id="delivery-time" name="delivery-time" required><br><br>
 
-      <label for="reservation-time">Reservation Time:</label>
-      <input type="datetime-local" id="reservation-time" name="reservation-time" required><br><br>
-
-      <label for="product-selection">Product Selection:</label>
-      <select id="product-selection" name="product-selection" multiple>
-        <option value="HTML Hot Espresso">HTML Hot Espresso</option>
-        <option value="CSS Cappuccino">CSS Cappuccino</option>
-        <option value="Python Mocha Latte">Python Mocha Latte</option>
-        <option value="React Iced Tea">React Iced Tea</option>
-        <option value="Angular Chilled Smoothie">Angular Chilled Smoothie</option>
-        <option value="Bootstrap Breakfast Bagel">Bootstrap Breakfast Bagel</option>
-        <option value="Ruby on Rails Omelette">Ruby on Rails Omelette</option>
-        <option value="API Apple Pie">API Apple Pie</option>
-        <option value="Error 404 Chocolate Cake">Error 404 Chocolate Cake</option>
-        <!-- Add other product options as needed -->
+      <button class="button">Submit Order</button>
       </select><br><br>
 
-      <button type="button">Order</button>
     </form>
-
-    <!-- Order List -->
-    <div id="order-list" style="display: none;">
-      <h3>Order List</h3>
-      <ul id="items-list">
-        <!-- Selected items will be displayed here -->
-      </ul>
-    </div>
   </section>
 
 </body>
