@@ -11,35 +11,23 @@ ul {
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: #D9CAC0;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .menu {
-  background-color: #f2f2f2;
-  padding: 10px;
   text-align: center;
   position: fixed;
   width: 100%;
-  top: 0;
   z-index: 1;
-}
-
-.menu {
   background-image: linear-gradient(to right, #FFD700, #FFA500);
   padding: 10px;
 }
 
-.menu ul {
-  list-style: none;
-}
-
-.menu ul li {
+.menu li {
   display: inline;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.menu ul li a {
+.menu a {
   text-decoration: none;
   color: #333;
 }
@@ -48,7 +36,6 @@ section {
   padding-top: 45px;
 }
 
-#home,
 #menu,
 #gallery,
 #reservation {
@@ -59,19 +46,12 @@ section {
 #about {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
-#about .cafe-image {
-  max-width: 100%;
-}
 
 .cafe-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .menu-category {
@@ -85,20 +65,15 @@ section {
 }
 
 .menu-category ul li {
-  list-style: none;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.menu-category ul li img {
+.menu-category img {
   max-width: 100px;
   margin-right: 15px;
   border-radius: 5px;
-}
-
-.menu-category ul li span {
-  font-weight: bold;
 }
 
 .image-gallery {
@@ -115,7 +90,6 @@ section {
 
 .gallery-item {
   position: relative;
-  display: inline-block;
 }
 
 .caption {
@@ -140,39 +114,6 @@ section {
   min-width: 300px;
 }
 
-
-@media (min-width: 480px) {
-  .rwd-table td:before {
-    display: none;
-  }
-}
-
-.rwd-table th,
-.rwd-table td {
-  text-align: left;
-}
-
-@media (min-width: 480px) {
-
-  .rwd-table th,
-  .rwd-table td {
-    display: table-cell;
-    padding: .25em .5em;
-  }
-
-  .rwd-table th:first-child,
-  .rwd-table td:first-child {
-    padding-left: 0;
-  }
-
-  .rwd-table th:last-child,
-  .rwd-table td:last-child {
-    padding-right: 0;
-  }
-}
-
-
-
 h1 {
   font-weight: normal;
   letter-spacing: -1px;
@@ -183,15 +124,12 @@ h1 {
   background: #34495E;
   color: #fff;
   border-radius: .4em;
-  overflow: hidden;
 }
 
-@media (min-width: 480px) {
 
-  .rwd-table th,
-  .rwd-table td {
-    padding: 1em !important;
-  }
+.rwd-table th,
+.rwd-table td {
+  padding: 1em !important;
 }
 
 .button {
@@ -200,8 +138,6 @@ h1 {
   color: white;
   padding: 15px 39px;
   text-align: center;
-  text-decoration: none;
-  display: inline-flex;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
